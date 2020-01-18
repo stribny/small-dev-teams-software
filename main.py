@@ -50,9 +50,10 @@ async def capture_screenshots(websites: List[str]) -> None:
     page = await browser.newPage()
     await page.setViewport({'width': 1200, 'height': 800})
     for website in websites:
-        await page.goto(website)
         filename = sha1(website.encode('utf-8')).hexdigest()
-        await page.screenshot({'path': f'processing/screenshots/{filename}.png'})
+        if not os.path.exists(f'processing/screenshots/{filename}.png'):
+            await page.goto(website)
+            await page.screenshot({'path': f'processing/screenshots/{filename}.png'})
     await browser.close()
 
 
@@ -84,7 +85,7 @@ def generate():
     with open(Path('templates/index.htm')) as template_file:
         template = Template(template_file.read())
         with open(Path('index.html'), 'w') as index_file:
-            index_file.write(template.render(categories=categories))
+            index_file.write(template.render(categories=categories, category_keys=sorted(categories.keys())))
 
 if __name__ == "__main__":
     cli()

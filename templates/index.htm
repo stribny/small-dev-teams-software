@@ -4,27 +4,43 @@
     <meta charset="utf-8">
     <title>Software for small development teams</title>
     <link rel="stylesheet" href="static/bulma.min.css">
+    <style>
+        h2 { margin-top: 40px; }
+        .product-link { border-bottom: 2px solid transparent; }
+        .product-link:hover { border-bottom: 2px solid black;}
+        .description { padding-top: 10px;}
+    </style>
   </head>
   <body>
     <section class="section">
       <div class="container">
         <h1 class="title is-1">Software for small development teams</h1>
-        {% for category in categories.keys() %}
+        <iframe style="float: right;" src="https://ghbtns.com/github-btn.html?user=stribny&repo=small-dev-teams-software&type=star&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
+        <div style="border-bottom: 2px solid rgb(236, 235, 235); padding: 20px 20px 20px 0; margin-bottom: 20px;">
+            Affordable software for small teams and individual developers to collaborate on software development.
+        </div>
+        {% for category in category_keys %}
             <h2 class="title">{{ category }}</h2>
-            <h3 class="subtitle">
-                Category description
-            </h3>
+            <hr />
             <div class="columns is-multiline">
                 {% for product in categories[category] %}
                     <div class="column is-3">
-                        <h3 class="title is-4"><a href="{{product.url}}">{{product.name}}</a></h3>
+                        <h3 class="title is-4"><a class="product-link" href="{{product.url}}">{{product.name}}</a></h3>
                         <figure class="image is-3by2">
                             <img src="processing/screenshot_thumbnails/{{ product.image_name }}.png">
                         </figure>
+                        <p class="description">{{product.description}}</p>
                     </div>
                 {% endfor %}
             </div>
         {% endfor %}
     </section>
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            Software is hand-picked by <a href="https://stribny.name">Petr Stribny</a>, hit me at <a href="https://twitter.com/stribny">@stribny</a> if you have any suggestion.
+          </p>
+        </div>
+      </footer>
   </body>
 </html>

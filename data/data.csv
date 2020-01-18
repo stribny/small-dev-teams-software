@@ -1,21 +1,28 @@
 Name,Url,Category,Description,Tags
-Github,https://github.com/,Source control+Project management,,
-Gitlab,https://about.gitlab.com/,Source control+Project management,,
+Github,https://github.com/,Source control+Project management+Knowledge base,Cloud-based development platform to manage code and projects.,
+Gitlab,https://about.gitlab.com/,Source control+Project management+Knowledge base,Cloud-based or self-hosted development platform to manage code and projects.,
 Clubhouse,https://clubhouse.io/,"
-Project management+Test case management",,
-G Suite,https://gsuite.google.com,"Wireframes, mockups+Communication",,
+Project management",Project management platform.,
+G Suite,https://gsuite.google.com,"Wireframes, mockups+Communication+Test case management","Emails, text documents and spreadsheets, storage, chat and video calls.",
 Slack,https://slack.com,"Communication
-",,
+",Chat and video calls.,
 Mattermost,https://mattermost.com/,"Communication
-",,
-Draw.io,https://www.draw.io/,Diagrams,,
-Cawemo,https://cawemo.com/,Diagrams,,
-freshrelease,https://www.freshworks.com/project-management/,Project management+Test case management,,
-Qase,https://qase.io/,Test case management,,
+",Chat.,
+Draw.io,https://www.draw.io/,Diagrams,"Simple tool to create diagrams, mockups and graphic materials.
+",
+Cawemo,https://cawemo.com/,Diagrams,Simple tool to create process diagrams.,
+freshrelease,https://www.freshworks.com/project-management/,Project management+Test case management,Project management platform with test case management.,
+Qase,https://qase.io/,Test case management,Test case management.,
 Canva,https://www.canva.com,"Wireframes, mockups
-",,
-Pencil,http://pencil.evolus.vn/,"Wireframes, mockups+Diagrams",,
-Balsamiq,https://balsamiq.com/,"Wireframes, mockups",,
-Appear.tv,https://www.appeartv.com/,Communication,,
-Zoom,https://www.zoom.us,Communication,,
-Google Hangouts,https://hangouts.google.com/,Communication,,
+",Simple tool to create mockups and graphic materials.,
+Pencil,http://pencil.evolus.vn/,"Wireframes, mockups+Diagrams","Desktop app for creating wireframes, mockups and diagrams.
+",
+Balsamiq,https://balsamiq.com/,"Wireframes, mockups","Wireframing tool.
+",
+Zoom,https://www.zoom.us,Communication,Video chat.,
+Gitea,https://gitea.io,Source control+Project management,Self-hosted development platform to manage code and projects.,
+Plexie,https://plexie.com,Knowledge base,Team notes.,
+DokuWiki,https://www.dokuwiki.org,Knowledge base,"Self-hosted wiki.
+",
+MediaWiki,https://www.mediawiki.org/wiki/MediaWiki,Knowledge base,"Self-hosted wiki.
+",
