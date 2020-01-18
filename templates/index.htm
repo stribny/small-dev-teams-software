@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Software for small development teams</title>
+    <link rel="stylesheet" href="static/bulma.min.css">
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title is-1">Software for small development teams</h1>
+        {% for category in categories.keys() %}
+            <h2 class="title">{{ category }}</h2>
+            <h3 class="subtitle">
+                Category description
+            </h3>
+            <div class="columns is-multiline">
+                {% for product in categories[category] %}
+                    <div class="column is-3">
+                        <h3 class="title is-4"><a href="{{product.url}}">{{product.name}}</a></h3>
+                        <figure class="image is-3by2">
+                            <img src="processing/screenshot_thumbnails/{{ product.image_name }}.png">
+                        </figure>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </section>
+  </body>
+</html>
